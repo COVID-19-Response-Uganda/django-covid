@@ -567,3 +567,16 @@ a.navbar-brand:hover {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 15px;
 }
+
+.head-tittle {
+    color: #000000;
+    font-size: 1.6em;
+    font-weight: 800;
+    letter-spacing: -1px;
+
+}
+
+.head-tittle strong {
+    color: #ff9171;
+    font-weight: 1000;
+}
