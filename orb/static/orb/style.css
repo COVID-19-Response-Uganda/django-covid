@@ -555,7 +555,9 @@ div.tagsinput {
 }
 
 a.navbar-brand:hover {
-    outline: #ff9171 solid 2px;
+    /* outline: #ff9171 solid 2px; */
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .navbar-inverse {
