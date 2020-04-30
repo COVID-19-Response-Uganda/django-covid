@@ -48,7 +48,7 @@
     {% include "includes/header.html" %}
 </div>
 <div class="container-fluid">
-    <div class="main" style="max-width: 1000px; margin: 20px auto;">
+    <div class="main" style="max-width: 800px; margin: 20px auto;">
 
 
         {% if STAGING %}
@@ -68,6 +68,7 @@
         {% endif %}
         {% block content %} {% endblock content %}
     </div><!--  end main -->
+    <div id="right-side"></div>
 </div><!--  end container -->
 
 <div id="footer" class="footer hidden-print">

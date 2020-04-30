@@ -567,7 +567,10 @@ a.navbar-brand:hover {
 #topics-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 15px;
+    grid-template-rows: repeat(3, 180px);
+    grid-auto-rows: 200px;
+    grid-gap: 10px;
+    
 }
 
 .head-tittle {
@@ -581,4 +584,13 @@ a.navbar-brand:hover {
 .head-tittle strong {
     color: #ff9171;
     font-weight: 1000;
+}
+
+#topics-gallery img {
+    width: 150px;
+    height: 80px;
+}
+
+.homepage{
+    font-size: 1.2em;
 }
