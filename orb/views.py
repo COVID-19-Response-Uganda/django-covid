@@ -522,7 +522,7 @@ def resource_edit_view(request, resource_id):
         data['health_topic'] = health_topic
 
         resource_type = Tag.objects.filter(
-            category__slug='type', resourcetag__resource=resource).values_list('id', flat=True)
+            category__slug='resource-type', resourcetag__resource=resource).values_list('id', flat=True)
         data['resource_type'] = resource_type
 
         audience = Tag.objects.filter(
@@ -739,7 +739,7 @@ def resource_form_set_choices(form):
     form.fields['health_topic'].choices = [(t.id, t.name) for t in Tag.objects.filter(
         category__top_level=True).order_by('order_by', 'name')]
     form.fields['resource_type'].choices = [(t.id, t.name) for t in Tag.objects.filter(
-        category__slug='type').order_by('order_by', 'name')]
+        category__slug='resource-type').order_by('order_by', 'name')]
     form.fields['audience'].choices = [(t.id, t.name) for t in Tag.objects.filter(
         category__slug='audience').order_by('order_by', 'name')]
     form.fields['device'].choices = [(t.id, t.name) for t in Tag.objects.filter(
