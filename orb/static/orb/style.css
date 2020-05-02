@@ -594,3 +594,27 @@ a.navbar-brand:hover {
 .homepage{
     font-size: 1.2em;
 }
+
+@media all and (max-width:800px){
+    #topics-gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 180px);
+        grid-auto-rows: 200px;
+        grid-gap: 10px;
+        
+    }
+}
+@media all and (max-width:495px){
+    #topics-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 180px);
+        grid-auto-rows: 200px;
+        grid-gap: 10px;
+        
+    }
+    .navbar-brand-title {
+        font-size: 14px;
+    }
+}
